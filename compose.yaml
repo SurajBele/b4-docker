@@ -1,5 +1,5 @@
 services:
-  server_from_Dockerfile:
+  server_from_dockerfile:
     build: .
     ports:
       - "81:80"
