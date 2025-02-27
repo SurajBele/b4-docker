@@ -1,11 +1,15 @@
 services:
+  server_from_Dockerfile:
+    build: .
+    ports:
+      - "81:80"
   webserver:
      image: surajbele/b4:aache2
      ports:
-       - 80:80
+       - "80:80"
   appserver:
       image: surajbele/tomcat:java_base
       ports:
-        - 8080:8080
+        - "8080:8080"
       
   
