@@ -3,8 +3,6 @@ services:
      image: surajbele/b4:aache2
      ports:
        - 80:80
-     volumes:
-       - data:/var/www/html/
   appserver:
       image: surajbele/tomcat:java_base
       ports:
