@@ -1,6 +1,7 @@
 
 FROM ubuntu:20.04
 MAINTAINER suraj
+USER daemon
 RUN apt-get update
 ENV DEBIAN_FRONTEND=noninteractive
 ENV department=dev
